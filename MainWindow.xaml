@@ -1,0 +1,15 @@
+<Window x:Class="VSWatcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VSWatcher" Topmost="True" WindowStyle="None" ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight" MinWidth="220" ShowInTaskbar="False"
+        Background="#FF252526" BorderBrush="#FF3F3F46" BorderThickness="1">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Background="#FF333337" Height="20" MouseLeftButtonDown="Drag">
+            <TextBlock Text="VS Watcher" Foreground="#FFAAAAAA" FontSize="11" VerticalAlignment="Center" Margin="6,0"/>
+            <Button Content="✕" HorizontalAlignment="Right" Width="24" Background="Transparent"
+                    Foreground="#FFCCCCCC" BorderThickness="0" Click="Close_Click" Cursor="Hand"/>
+        </Grid>
+        <StackPanel x:Name="Stack" Margin="4"/>
+    </DockPanel>
+</Window>
